@@ -1,0 +1,22 @@
+name: CI Pipeline
+on: [push, pull _ request]
+jobs :
+build and test:
+runs-on: ubuntu-latest
+steps:
+- uses:
+- name:
+uses:
+with :
+actions/checkout@v3
+Set up Python
+actions/setup-pythor@v4
+python-version: '3. x'
+- name:
+run:
+- name:
+run:
+Install dependencies
+pip install pytest
+Run tests
+pytest
